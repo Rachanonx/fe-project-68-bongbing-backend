@@ -20,12 +20,9 @@ app.set('query parser', 'extended');
 
 // CORS ← เพิ่ม (ต้องอยู่ก่อน routes ทุกอัน)
 app.use(cors({
-  origin: [
-    "*"
-  ],
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 // Handle OPTIONS preflight ← เพิ่ม
